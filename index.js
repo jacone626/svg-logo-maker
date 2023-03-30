@@ -1,5 +1,7 @@
 const inquirer = require("inquirer");
 const fs = require('fs');
+const shapes = require('./lib/shapes.js')
+
 
 const questions = function() {
     inquirer.prompt([
@@ -26,7 +28,7 @@ const questions = function() {
       },
 ])
 .then((data) =>
-  fs.writeFile(`${shape}logo.svg`, render(data), (err) =>
+  fs.writeFile(`logo.svg`, shapes(data), (err) =>
   err ? console.error(err) : console.log('Logo has been created.')
   ))
 };
