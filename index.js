@@ -1,7 +1,17 @@
 const inquirer = require("inquirer");
 const fs = require('fs');
-const shapes = require('./lib/shapes.js')
+const {Circle, Square, Triangle} = require('./lib/shapes.js')
 
+
+const shapes = function(data) {
+  if (data.shape === "circle") {
+    const circle = new Circle(data.text, data.textColor, data.shapeColor);
+    return `<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="300" height="200"><text x="150" y="125" font-size="60" 
+    text-anchor="middle" fill="${circle.textColor}">${circle.text}</text>${circle.render()}</svg>`
+  }
+  return `<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="300" height="200"><text x="150" y="125" font-size="60" 
+  text-anchor="middle" fill="${data.textColor}">${data.text}</text><${data.shape} cx="25" cy="75" r="20 height="100%" width="100%" fill="${data.shapeColor}"/></svg>`
+}
 
 const questions = function() {
     inquirer.prompt([
