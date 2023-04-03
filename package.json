@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/jacone626/svg-logo-maker/issues"
   },
-  "homepage": "https://github.com/jacone626/svg-logo-maker#readme"
+  "homepage": "https://github.com/jacone626/svg-logo-maker#readme",
+  "devDependencies": {
+    "jest": "^29.5.0"
+  }
 }
