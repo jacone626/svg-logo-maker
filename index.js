@@ -44,13 +44,13 @@ const questions = function() {
       },
       {
         type: 'list',
-        message: 'Please select a shape',
+        message: 'Please select a shape.',
         name: "shape",
         choices: ['circle', 'triangle', 'square'],
       },
       {
         type: 'input',
-        message: 'Please select a color for the shape',
+        message: 'Please select a color for the shape.',
         name: "shapeColor"
       },
 ])
