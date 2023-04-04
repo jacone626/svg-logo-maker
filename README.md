@@ -25,9 +25,10 @@ To test the code and ensure that a shape was rendered, run "npm run test" in the
 
 ![command line with the three tests that all passed](images/logo-maker-tests.png)
 
-Below is a link to a walkthrough video:
+Below is the walkthrough video:
 
-[Walkthrough Video]()
+
+
 
 ## Credits
 
